@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "789468743627",
+    "project_id": "clothly-signin",
+    "storage_bucket": "clothly-signin.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789468743627:android:982d350f4d7d23dec8984e",
+        "android_client_info": {
+          "package_name": "com.example.clothly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789468743627-3squ6bl9drjk2dk7mitqdvmbhrjb6i4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWcmGQmgJkoHaEsohjy9HW0Pr8Pen9pPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789468743627-3squ6bl9drjk2dk7mitqdvmbhrjb6i4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
