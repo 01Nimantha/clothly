@@ -21,9 +21,9 @@ Clothly is a sleek, user-friendly mobile application built with **Flutter** that
 
 ## 📱 Screenshots
 
-| Login                           | Product Listing               | Product Detail                    | Cart                          | Checkout                          | About                           |
-| ------------------------------- | ----------------------------- | --------------------------------- | ----------------------------- | --------------------------------- | ------------------------------- |
-| ![Login](screenshots/login.png) | ![List](screenshots/list.png) | ![Detail](screenshots/detail.png) | ![Cart](screenshots/cart.png) | ![Stripe](screenshots/stripe.png) | ![About](screenshots/about.png) |
+| Login                                  | Product Listing                      | Product Detail                           | Cart                                 | Checkout                                 | About                                  |
+| -------------------------------------- | ------------------------------------ | ---------------------------------------- | ------------------------------------ | ---------------------------------------- | -------------------------------------- |
+| ![Login](assets/screenshots/login.png) | ![List](assets/screenshots/list.png) | ![Detail](assets/screenshots/detail.png) | ![Cart](assets/screenshots/cart.png) | ![Stripe](assets/screenshots/stripe.png) | ![About](assets/screenshots/about.png) |
 
 > _(Use individual images in a `/screenshots` folder if you split them later)_
 
@@ -54,6 +54,6 @@ Clothly is a sleek, user-friendly mobile application built with **Flutter** that
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/clothly.git
+git clone https://github.com/01Nimantha/clothly.git
 cd clothly
 ```
