@@ -1,6 +1,6 @@
-# 👕 Clothly - Fashion Shopping App
+# 👕 Clothly – Fashion Shopping App
 
-Clothly is a sleek, user-friendly mobile application built with **Flutter** that offers a seamless clothing shopping experience. With secure authentication, real-time data storage, and integrated payments, Clothly is designed to be fast, secure, and intuitive.
+Clothly is a modern, responsive cross-platform e-commerce app built with **Flutter**. It offers users a seamless clothing shopping experience with Firebase-powered authentication, real-time Firestore data, Stripe payment integration, and smooth UI/UX design.
 
 ![Clothly Banner](Clothly.png)
 
@@ -8,52 +8,52 @@ Clothly is a sleek, user-friendly mobile application built with **Flutter** that
 
 ## ✨ Features
 
-- 🔐 Google Sign-In Authentication (via Firebase)
-- 📦 Browse clothing by categories (T-Shirts, Hoodies, Frocks, etc.)
-- 🛒 Add items to cart with quantity/size selection
-- 💳 Secure checkout using **Stripe**
-- 📡 Cloud Firestore integration for real-time product data
-- 📱 Responsive, modern UI with smooth navigation
-- 🧾 Dynamic price calculation and cart management
-- 🚀 Built entirely with Flutter & Dart
+- 🔐 Google Sign-In with Firebase Authentication
+- 📦 Product categories (T-Shirts, Hoodies, Frocks, etc.)
+- 📏 Size selection and quantity adjustment
+- 🛒 Real-time shopping cart management
+- 💳 Secure Stripe checkout with `flutter_stripe`
+- 📡 Cloud Firestore integration for products and cart
+- 💡 State management with `Provider`
+- 🎨 Beautiful, intuitive UI and smooth navigation
+- 🧪 Unit & integration tested for high reliability
 
 ---
 
-## 📱 Screenshots
+## 📸 Screenshots
 
-| Login                                  | Product Listing                      | Product Detail                           | Cart                                 | Checkout                                 | About                                  |
+| Login Screen                           | Product List                         | Product Details                          | Shopping Cart                        | Stripe Checkout                          | About Page                             |
 | -------------------------------------- | ------------------------------------ | ---------------------------------------- | ------------------------------------ | ---------------------------------------- | -------------------------------------- |
 | ![Login](assets/screenshots/login.png) | ![List](assets/screenshots/list.png) | ![Detail](assets/screenshots/detail.png) | ![Cart](assets/screenshots/cart.png) | ![Stripe](assets/screenshots/stripe.png) | ![About](assets/screenshots/about.png) |
 
-> _(Use individual images in a `/screenshots` folder if you split them later)_
+> ⚠️ Make sure you create the `/assets/screenshots/` folder and place the respective images there, or update the paths accordingly.
 
 ---
 
 ## 🧰 Tech Stack
 
-- **Flutter** – Cross-platform UI
-- **Firebase** – Auth + Firestore
-- **Stripe** – Payment Integration
-- **Provider** – State Management
-- **Dotenv** – Secret Key Management
+- **Flutter** – UI toolkit for natively compiled apps
+- **Firebase** – Auth & Cloud Firestore
+- **Stripe** – Payment processing
+- **Provider** – State management
+- **flutter_dotenv** – Secret management (.env)
 
 ---
 
 ## 🚀 Getting Started
 
-### 🔧 Prerequisites
+### ✅ Prerequisites
 
-- Flutter SDK
-- Firebase Project with:
-  - Authentication (Google Sign-In)
-  - Firestore enabled
-- Stripe Account (for API keys)
+- [Flutter SDK](https://docs.flutter.dev/get-started/install)
+- Firebase project setup with:
+  - Google Sign-In Authentication
+  - Cloud Firestore
+- Stripe developer account & keys
 
-### 🛠️ Setup Instructions
+### 🔧 Setup Instructions
 
-1. **Clone the repository:**
-
-```bash
-git clone https://github.com/01Nimantha/clothly.git
-cd clothly
-```
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/01Nimantha/clothly.git
+   cd clothly
+   ```
