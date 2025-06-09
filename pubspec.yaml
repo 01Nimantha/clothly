@@ -76,6 +76,7 @@ flutter:
     - assets/ic_launcher_round.png
     - assets/empty-cart.png
     - .env
+    - assets/screenshots/
 
 flutter_icons:
   android: true
