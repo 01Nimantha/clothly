@@ -14,6 +14,43 @@
       },
       "oauth_client": [
         {
+          "client_id": "789468743627-rlosa84bdagj67egulbs5ddutt7dem3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.clothly",
+            "certificate_hash": "d26dcb5f836072039c12585444df415db0450e43"
+          }
+        },
+        {
+          "client_id": "789468743627-3squ6bl9drjk2dk7mitqdvmbhrjb6i4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWcmGQmgJkoHaEsohjy9HW0Pr8Pen9pPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789468743627-3squ6bl9drjk2dk7mitqdvmbhrjb6i4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789468743627:android:2a42a3912d61995ec8984e",
+        "android_client_info": {
+          "package_name": "com.shopingcarts.clothly"
+        }
+      },
+      "oauth_client": [
+        {
           "client_id": "789468743627-3squ6bl9drjk2dk7mitqdvmbhrjb6i4a.apps.googleusercontent.com",
           "client_type": 3
         }

@@ -1,4 +1,4 @@
-package com.example.clothly
+package com.shopingcarts.clothly
 
 import io.flutter.embedding.android.FlutterActivity
 

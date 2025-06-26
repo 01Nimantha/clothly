@@ -1,7 +1,5 @@
-import 'package:clothly/data/google_sign_in_provider.dart';
+import 'package:clothly/pages/signin.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:provider/provider.dart';
 
 class LogingPage extends StatelessWidget {
   const LogingPage({super.key});
@@ -44,22 +42,22 @@ class LogingPage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 40,
+                height: 50,
+              ),
+              SizedBox(
+                height: 10,
               ),
               ElevatedButton.icon(
                 onPressed: () {
-                  Provider.of<GoogleSignInProvider>(context, listen: false)
-                      .googleLoging();
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => Signin(),
+                  ));
                 },
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(double.infinity, 50),
                 ),
-                icon: FaIcon(
-                  FontAwesomeIcons.google,
-                  color: Colors.red,
-                ),
                 label: Text(
-                  "Sign Up with Google",
+                  "Sign in",
                   style: TextStyle(color: Colors.black),
                 ),
               ),

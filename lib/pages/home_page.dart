@@ -1,11 +1,13 @@
+import 'dart:convert';
 import 'package:clothly/components/shoping_item.dart';
 import 'package:clothly/data/data.dart';
-import 'package:clothly/data/database.dart';
 import 'package:clothly/data/filter_provider.dart';
 import 'package:clothly/pages/drawer_page.dart';
 import 'package:clothly/pages/item_page.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:http/http.dart' as http;
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -25,18 +27,41 @@ class _PageOneState extends State<HomePage> {
     Provider.of<FilterProvider>(context, listen: false).search(value);
   }
 
-  final Database database = Database();
-
   @override
   void initState() {
-    _initializeData();
     super.initState();
+    itemName = "All";
+    fetchProducts();
   }
 
-  Future<void> _initializeData() async {
-    await database.fetchData();
-    if (!mounted) return;
-    Provider.of<FilterProvider>(context, listen: false).addItems(item: "All");
+  Future<void> fetchProducts() async {
+    try {
+      final response = await http.get(Uri.parse('http://10.0.2.2:8080/items'));
+
+      if (response.statusCode == 200) {
+        final List<dynamic> data = jsonDecode(response.body);
+        final List<Product> products =
+            data.map((item) => Product.fromMap(item)).toList();
+
+        // Clear existing data and add new
+        Data.arr.clear();
+        for (var product in products) {
+          Data.addItem(product);
+        }
+
+        // Notify provider to reload from Data.arr
+        if (mounted) {
+          Provider.of<FilterProvider>(context, listen: false)
+              .addItems(item: itemName);
+        }
+      } else {
+        throw Exception("Failed to load products");
+      }
+    } catch (e) {
+      if (kDebugMode) {
+        print("Error fetching products: $e");
+      }
+    }
   }
 
   @override
