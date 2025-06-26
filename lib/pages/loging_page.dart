@@ -1,6 +1,5 @@
 import 'package:clothly/data/google_sign_in_provider.dart';
 import 'package:clothly/pages/signin.dart';
-import 'package:clothly/pages/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
@@ -25,7 +24,7 @@ class LogingPage extends StatelessWidget {
                     "./assets/ic_launcher_foreground.png",
                   ),
                   width: 500,
-                  height: 350,
+                  height: 500,
                 ),
               ),
               Text(
@@ -48,20 +47,6 @@ class LogingPage extends StatelessWidget {
               SizedBox(
                 height: 50,
               ),
-              ElevatedButton.icon(
-                onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => Signup(),
-                  ));
-                },
-                style: ElevatedButton.styleFrom(
-                  minimumSize: Size(double.infinity, 50),
-                ),
-                label: Text(
-                  "Sign Up",
-                  style: TextStyle(color: Colors.black),
-                ),
-              ),
               SizedBox(
                 height: 10,
               ),
@@ -76,26 +61,6 @@ class LogingPage extends StatelessWidget {
                 ),
                 label: Text(
                   "Sign in",
-                  style: TextStyle(color: Colors.black),
-                ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              ElevatedButton.icon(
-                onPressed: () {
-                  Provider.of<GoogleSignInProvider>(context, listen: false)
-                      .googleLoging();
-                },
-                style: ElevatedButton.styleFrom(
-                  minimumSize: Size(double.infinity, 50),
-                ),
-                icon: FaIcon(
-                  FontAwesomeIcons.google,
-                  color: Colors.red,
-                ),
-                label: Text(
-                  "Sign Up with Google",
                   style: TextStyle(color: Colors.black),
                 ),
               ),
