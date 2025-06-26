@@ -10,6 +10,11 @@ class Signin extends StatefulWidget {
 class _SigninState extends State<Signin> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(),
+      body: Column(
+        children: [],
+      ),
+    );
   }
 }
