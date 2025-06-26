@@ -22,9 +22,9 @@ Clothly is a modern, responsive cross-platform e-commerce app built with **Flutt
 
 ## 📸 Screenshots
 
-| Login Screen                           | Product List                         | Product Details                          | Shopping Cart                        | Stripe Checkout                          | About Page                             |
-| -------------------------------------- | ------------------------------------ | ---------------------------------------- | ------------------------------------ | ---------------------------------------- | -------------------------------------- |
-| ![Login](assets/screenshots/login.png) | ![List](assets/screenshots/list.png) | ![Detail](assets/screenshots/detail.png) | ![Cart](assets/screenshots/cart.png) | ![Stripe](assets/screenshots/stripe.png) | ![About](assets/screenshots/about.png) |
+| Login Screen                           | Sign Up Screen                           | Sign In Screen                           | Product List                         | Product Details                          | Shopping Cart                        | Stripe Checkout                          | About Page                             |
+| -------------------------------------- | ---------------------------------------- | ---------------------------------------- | ------------------------------------ | ---------------------------------------- | ------------------------------------ | ---------------------------------------- | -------------------------------------- |
+| ![Login](assets/screenshots/login.png) | ![Signup](assets/screenshots/signup.png) | ![Signin](assets/screenshots/signin.png) | ![List](assets/screenshots/list.png) | ![Detail](assets/screenshots/detail.png) | ![Cart](assets/screenshots/cart.png) | ![Stripe](assets/screenshots/stripe.png) | ![About](assets/screenshots/about.png) |
 
 > ⚠️ Make sure you create the `/assets/screenshots/` folder and place the respective images there, or update the paths accordingly.
 
