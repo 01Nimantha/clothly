@@ -65,7 +65,6 @@ class MyApp extends StatelessWidget {
                   return NavigationPage();
                 }
                 return LogingPage();
-                // return NavigationPage();
               }),
         ),
       ),
