@@ -1,5 +1,6 @@
 import 'package:clothly/data/google_sign_in_provider.dart';
 import 'package:clothly/pages/signin.dart';
+import 'package:clothly/pages/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
@@ -24,7 +25,7 @@ class LogingPage extends StatelessWidget {
                     "./assets/ic_launcher_foreground.png",
                   ),
                   width: 500,
-                  height: 300,
+                  height: 350,
                 ),
               ),
               Text(
@@ -48,7 +49,11 @@ class LogingPage extends StatelessWidget {
                 height: 50,
               ),
               ElevatedButton.icon(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => Signup(),
+                  ));
+                },
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(double.infinity, 50),
                 ),
