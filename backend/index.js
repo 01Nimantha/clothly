@@ -11,6 +11,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use("/", require("./routes/user.route"));
+app.use("/", require("./routes/item.route"));
 
 app.listen(port, () => {
   console.log(`port running on ${port}+port`);
