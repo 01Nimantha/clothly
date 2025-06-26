@@ -79,6 +79,7 @@ flutter:
     - assets/empty-cart.png
     - .env
     - assets/screenshots/
+    - assets/svg/
 
 flutter_icons:
   android: true
