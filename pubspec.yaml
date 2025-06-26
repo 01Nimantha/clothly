@@ -44,6 +44,8 @@ dependencies:
   flutter_stripe: ^11.5.0
   http: ^1.4.0
   flutter_dotenv: ^5.2.1
+  google_fonts: ^6.2.1
+  flutter_svg: ^2.2.0
 
 dev_dependencies:
   flutter_test:
