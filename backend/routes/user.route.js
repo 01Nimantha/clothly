@@ -17,7 +17,7 @@ router.post("/signup", async (req, res) => {
 
     const savedUser = await newUser.save();
     console.log(savedUser);
-    res.json(savedUser);
+    res.statusCode(201).json(savedUser);
   } catch (err) {
     console.error(err);
     res
@@ -37,7 +37,7 @@ router.post("/signin", async (req, res) => {
       return res.status(401).json({ message: "Invalid email or password" });
     }
 
-    res.json(user);
+    res.status(200).json({ message: "valid email and password" });
   } catch (err) {
     console.error(err);
     res
