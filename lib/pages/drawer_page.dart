@@ -1,14 +1,15 @@
-import 'package:clothly/data/google_sign_in_provider.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+// import 'package:clothly/data/google_sign_in_provider.dart';
+// import 'package:firebase_auth/firebase_auth.dart';
+import 'package:clothly/pages/loging_page.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+// import 'package:provider/provider.dart';
 
 class DrawerPage extends StatelessWidget {
   const DrawerPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final user = FirebaseAuth.instance.currentUser!;
+    // final user = FirebaseAuth.instance.currentUser!;
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -66,44 +67,71 @@ class DrawerPage extends StatelessWidget {
           Spacer(
             flex: 2,
           ),
-          Card(
-            child: ListTile(
-              leading: CircleAvatar(
-                radius: 30,
-                backgroundImage: NetworkImage(user.photoURL!),
+          SizedBox(
+            width: 410,
+            height: 55,
+            child: ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor:
+                    WidgetStateProperty.all(Color.fromRGBO(0, 153, 255, 1.0)),
+                shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(1.0),
+                  ),
+                ),
               ),
-              title: Text("${user.displayName}"),
-              subtitle: Text("${user.email}"),
+              onPressed: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => LogingPage(),
+                  ),
+                );
+              },
+              child: Text(
+                "Logout",
+                style: TextStyle(color: Colors.white, fontSize: 18),
+              ),
             ),
           ),
-          Card(
-            child: ElevatedButton.icon(
-                style: ButtonStyle(
-                  minimumSize: WidgetStatePropertyAll(
-                    Size(double.infinity, 50),
-                  ),
-                  shape: WidgetStatePropertyAll(
-                    RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(
-                          10), // Optional: rounded corners
-                    ),
-                  ),
-                ),
-                onPressed: () {
-                  Provider.of<GoogleSignInProvider>(context, listen: false)
-                      .logout();
-                },
-                icon: Icon(
-                  Icons.logout_outlined,
-                  color: Colors.red,
-                ),
-                label: Text(
-                  "Logout",
-                  style: TextStyle(
-                    color: Colors.red,
-                  ),
-                )),
-          ),
+
+          // Card(
+          //   child: ListTile(
+          //     leading: CircleAvatar(
+          //       radius: 30,
+          //       backgroundImage: NetworkImage(user.photoURL!),
+          //     ),
+          //     title: Text("${user.displayName}"),
+          //     subtitle: Text("${user.email}"),
+          //   ),
+          // ),
+          // Card(
+          //   child: ElevatedButton.icon(
+          //       style: ButtonStyle(
+          //         minimumSize: WidgetStatePropertyAll(
+          //           Size(double.infinity, 50),
+          //         ),
+          //         shape: WidgetStatePropertyAll(
+          //           RoundedRectangleBorder(
+          //             borderRadius: BorderRadius.circular(
+          //                 10), // Optional: rounded corners
+          //           ),
+          //         ),
+          //       ),
+          //       onPressed: () {
+          //         Provider.of<GoogleSignInProvider>(context, listen: false)
+          //             .logout();
+          //       },
+          //       icon: Icon(
+          //         Icons.logout_outlined,
+          //         color: Colors.red,
+          //       ),
+          //       label: Text(
+          //         "Logout",
+          //         style: TextStyle(
+          //           color: Colors.red,
+          //         ),
+          //       )),
+          // ),
         ],
       ),
     );
