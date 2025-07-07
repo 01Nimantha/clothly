@@ -1,6 +1,7 @@
 import 'package:clothly/data/cart_provider.dart';
 import 'package:clothly/data/filter_provider.dart';
 import 'package:clothly/pages/loging_page.dart';
+// import 'package:clothly/pages/navigation_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
           home: LogingPage(),
+          // home: NavigationPage(),
         ),
       ),
     );
