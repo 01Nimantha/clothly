@@ -28,6 +28,8 @@ class _SigninState extends State<Signin> {
       },
     );
 
+    if (!mounted) return;
+
     if (kDebugMode) {
       print("Hello world!");
       print(res.body);
