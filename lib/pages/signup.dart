@@ -25,6 +25,8 @@ class _SignupState extends State<Signup> {
       },
     );
 
+    if (!mounted) return;
+
     if (kDebugMode) {
       print("Response Status: ${res.statusCode}");
       print("Response Body: ${res.body}");
